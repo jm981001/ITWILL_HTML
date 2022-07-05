@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>입력 양식 태그</h1>
+	<form action="">
+		<input type = "text" name = "text" value = "미리 입력한 텍스트"> <br><!-- 진짜 텍스트라서 지워야됨 -->
+		<input type = "text" name = "text2" placeholder = "텍스트를 입력하세요"><br><!-- 클릭하면 알아서 지워짐  -->
+		<input type = "password" name = "passwd" placeholder = "패스워드를 입력하세요"><br><!-- 클릭하면 알아서 지워짐  -->
+		<hr>
+		<input type="radio" name="radio" value="커피">커피
+		<input type="radio" name="radio" value="소주">소주
+		<input type="radio" name="radio2" value="우유">우유<!-- 둘 다 name을 통일해야함 -->
+		<br>
+		<input type="checkbox" name="subject" value="JAVA">자바
+		<input type="checkbox" name="subject" value="JSP">jsp
+		<input type="checkbox" name="subject" value="ANDROID">안드로이드
+		<hr>
+		<select name = "food">
+			<option value="김밥"> 김밥 </option>			
+			<option value="떡볶이"> 떡볶이 </option>			
+			<option value="순대"> 순대 </option>			
+		</select>
+		<select name = "food2" multiple="multiple">
+			<option value="김밥"> 김밥 </option>			
+			<option value="떡볶이"> 떡볶이 </option>			
+			<option value="순대"> 순대 </option>			
+		</select>
+			<select name = "food3">
+			<option>메뉴를 선택하세요</option>
+			<optgroup label="분식">
+				<option value="김밥"> 김밥 </option>			
+				<option value="떡볶이"> 떡볶이 </option>			
+				<option value="순대"> 순대 </option>	
+			</optgroup>		
+			<optgroup label="한식">
+				<option value="갈비탕"> 갈비탕 </option>			
+				<option value="비빔밥"> 비빔밥 </option>			
+				<option value="갈비찜"> 갈비찜 </option>	
+			</optgroup>		
+		</select>
+		
+		<hr>
+
+		<input type = "button" value="기본 버튼">
+		<input type = "reset" value="초기화 버튼">
+		<input type = "submit" value="전송 버튼">
+		
+		</form>
+		<hr>
+		<form action="">
+			<fieldset>
+				<legend>필수 항목</legend>	
+				<table>
+					<tr>
+						<td>아이디</td>
+						<td><input type = "text" name = "id"></td>
+						<td>
+					</tr>
+					<tr>
+						<td>패스워드</td>
+						<td><input type = "password" name = "passwd" ></td>
+						<td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>선택 항목</legend>	
+				<table>
+					<tr>
+						<td>이름</td>
+						<td><input type = "text" name = "name"></td>
+						<td>
+					</tr>
+					<tr>
+						<td>전화번호</td>
+						<td><input type = "text" name = "phone" ></td>
+						<td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+		
+	    
+</body>
+</html>
