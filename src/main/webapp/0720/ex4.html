@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>0720/ex4.html</title>
+</head>
+<body>
+	<form action="a.jsp" method="post">
+		<h1>프런트엔드 개발자 지원서</h1>
+		<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+		<hr>
+		<h3>개인정보</h3>
+		<ul>
+			<li><label>이름 </label> <input type="text" name="name" size="20"
+				placeholder="공백없이 입력하세요" autofocus ></li>
+			<li><label>연락처</label> <input type="text" name="name" size="20"></li>
+		</ul>
+		<h3>지원 분야</h3>
+		<ul>
+			<li><input type="radio" name="ra" value="웹퍼블리싱">웹 퍼블리싱</li>
+			<li><input type="radio" name="ra" value="웹 애플리케이션 개발">웹 애플리케이션 개발</li>
+			<li><input type="radio" name="ra" value="개발 환경 개선">개발 환경 개선</li>
+		</ul>
+		<h3>지원동기</h3>
+		<textarea rows="5" cols="60" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea><br>
+		 <input type="submit" value="접수하기"> 
+		 <input type="reset" value="다시쓰기">
+	</form>
+</body>
+</html>

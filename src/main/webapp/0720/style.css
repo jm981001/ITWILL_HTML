@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/*3. 파일로 만들어서 적용*/
+h1 {
+	color:red ;
+	background-color: pink;
+	padding : 10px;
+	text-align: center;
+}
