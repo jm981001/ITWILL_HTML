@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이름_인터페이스구현_실기시험_파일_test2.html</title>
+<script type="text/javascript" src="../0914_jQuery/jquery-3.6.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#btn').click(function(){
+			$.ajax({
+				url:'test2.jsp',
+				dataType:'json',
+				success:function(rdata){
+					$.each(rdata,function(index,item){
+                        $('table').append("<tr><td>"+item.board_num+"</td><td>"+item.board_name+"</td><td>"+item.board_subject+"</td><td>"+item.board_date+"</td><td>"+item.board_readcount+"</td></tr>");
+					});
+				}
+			});//
+			$(this).unbind();
+		});//
+	});//
+</script>
+
+</head>
+<body>
+<h3>2번)글조회버튼 클릭시 게시판글 가져와서 출력하세요</h3>
+
+<h6>글조회 버튼 클릭시 게시판 글목록 보이게 하세요</h6>
+<input type="button" value="글조회" id="btn">
+<table border="1">
+<tr><td>번호</td><td>제목</td><td>작성자</td><td>날짜</td><td>조회수</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[
+	{"id" : "admin", "name" : "관리자", "age":13, "agreeRcvSpam":false},
+	{"id" : "aaaa", "name" : "손정민", "age":11, "agreeRcvSpam":false},
+	{"id" : "dddd", "name" : "동미니", "age":12, "agreeRcvSpam":false}
+
+]
